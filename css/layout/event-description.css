@@ -1,0 +1,6 @@
+@media (max-width: 700px) {
+    .l-event-description {
+        flex-direction: column;
+        height: auto;
+    }
+}

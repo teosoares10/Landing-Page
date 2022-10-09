@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InDecor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/index.css">
+    <script type="module" src="./js/index.js" defer></script>
+</head>
+<body>
+    <header class="l-event-description">
+        <div class="event-description__disclaimer">
+            <h2 class="event-description__title">InDecor</h2>
+            <p class="event-description__about-event">
+                Um evento para revolucionar a sua criatividade
+            </p>
+            <p class="event-description__event-date-announce">Data do evento:</p>
+            <p class="event-description__event-date">Domingo, 28 de Maio, a partir das 14h</p>
+        </div>
+        <div class="c-subscription-form">
+            <p class="c-subscription-form__title">Preencha formulário para receber os detalhes do evento</p>
+            <form class="js-event-description-form">
+                <div class="c-subscription-form__form-group">
+                    <label for="name" class="c-subscription-form__label">Nome</label>
+                    <input
+                        class="c-subscription-form__input js-form-input"
+                        title="Insere o nome!" 
+                        type="text" 
+                        name="name" 
+                        placeholder="Digite o seu nome"
+                        required
+                        data-username
+                    />
+                </div>
+                <div class="c-subscription-form__form-group">
+                    <label for="email" class="c-subscription-form__label">E-mail</label>
+                    <input
+                        class="c-subscription-form__input js-form-input"
+                        title="Insere um e-mail valido: abc@gmail.com"
+                        pattern="[A-Za-z0-9._+-]+@[A-Za-z0-9 -]+\.[a-z]{2,}" 
+                        type="email" 
+                        name="email" 
+                        placeholder="Digite seu melhor e-mail"
+                        data-email
+                        required
+                    />
+                </div>
+                <div class="c-subscription-form__form-group">
+                    <label for="phone" class="c-subscription-form__label">Telefone</label>
+                    <input 
+                        class="c-subscription-form__input js-form-input"
+                        type="text" 
+                        name="phone" 
+                        placeholder="Número de WhatsApp"
+                        data-phone
+                    />
+                </div>
+                <div class="c-subscription-form__form-group">
+                    <label for="interest" class="c-subscription-form__label">Principal interesse</label>
+                    <select name="interest" class="c-subscription-form__select js-form-select">
+                        <option value="" disabled selected>Selecione</option>
+                        <option value="apartment">Apartamentos</option>
+                        <option value="house">Casas</option>
+                        <option value="other">Outros</option>
+                    </select>
+                </div>
+                <input type="submit" class="c-button" value="Quero me inscrever">
+            </form>
+        </div>
+    </header>
+    <section class="l-key-benefits">
+        <h2 class="key-benefits__title">O que você vai aprender:</h2>
+        <div class="key-benefits__benefits">
+            <div class="key-benefits__benefit js-key-benefits__benefit">
+                <div class="key-benefits__img key-benefits__benefit-bg-img-1"></div>
+                <p class="key-benefits__content">
+                    Alguma coisa muito legal, que vai fazer a diferença na 
+                    vida do participante.
+                </p>
+            </div>
+            <div class="key-benefits__benefit js-key-benefits__benefit">
+                <div class="key-benefits__img key-benefits__benefit-bg-img-2"></div>
+                <p class="key-benefits__content">
+                    Alguma coisa muito legal, que vai fazer a diferença na 
+                    vida do participante.
+                </p>
+            </div>
+            <div class="key-benefits__benefit js-key-benefits__benefit">
+                <div class="key-benefits__img key-benefits__benefit-bg-img-3"></div>
+                <p class="key-benefits__content">
+                    Alguma coisa muito legal, que vai fazer a diferença na 
+                    vida do participante.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="l-location">
+        <div class="location__address">
+            <i class="bi bi-geo-alt-fill location__icon"></i>
+            <div class="location__address-details">
+                <p class="location__address-event-street">Rua do evento, 1333</p>
+                <p class="location__address-event-hood">Bairro tal</p>
+                <p class="location__address-event-open">Abertura: 14h</p>
+            </div>
+        </div>
+        <div class="location__about-location">
+            <h3 class="location__title">Local de destaque</h3>
+            <p class="location__content">
+                O evento será realizado em um local prestigiado pelos amantes de Design de Interiores, onde teremos exemplos de vários ambientes, tanto internos como externos.
+            </p>
+        </div>
+    </section>
+    <section class="l-details">
+        <div class="detail">
+            <img class="detail__img" src="img/hrz-3.jpg" alt="Sala decorada em tons claros">
+            <div class="detail__description">
+                <h3 class="detail__title detail__title--size--big">Conheça os ambientes que você vai aprender a decorar</h3>
+            </div>
+        </div>
+        <div class="detail">
+            <div class="detail__description">
+                <h3 class="detail__title">Detalhes</h3>
+                <ul class="detail__list-items">
+                    <li class="detail__item">Posicionamento</li>
+                    <li class="detail__item">Aproveitamento de espaço</li>
+                    <li class="detail__item">Combinação de cores</li>
+                    <li class="detail__item">Organização</li>
+                    <li class="detail__item">E muito mais...</li>
+                </ul>
+            </div>
+            <img class="detail__img" src="img/hrz-4.jpg" alt="Sala de jantar decorada">
+        </div>
+        <div class="detail">
+            <img class="detail__img" src="img/hrz-5.jpg" alt="Sala decorada em tons escuros">
+            <div class="detail__description">
+                <h3 class="detail__title">Objetos</h3>
+                <ul class="detail__list-items">
+                    <li class="detail__item">Cadeiras</li>
+                    <li class="detail__item">Mesas</li>
+                    <li class="detail__item">Espelhos</li>
+                    <li class="detail__item">Plantas</li>
+                    <li class="detail__item">Cortinas</li>
+                    <li class="detail__item">E muito mais...</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="l-cta">
+        <h3 class="cta__title">Gostou? Então se inscreva:</h3>
+        <button class="c-button cta__button js-cta-button" data-button>Solicitar Inscrição</button>
+        <dialog class="c-subscription-form cta__subscription-form js-cta-subscription-form-modal">
+            <form class="js-cta-subscription-form" method="dialog">
+                <div class="c-subscription-form__form-group">
+                    <label for="name" class="c-subscription-form__label">Nome</label>
+                    <input 
+                        class="c-subscription-form__input js-form-input"
+                        title="Insere o nome!" 
+                        type="text" 
+                        name="name" 
+                        placeholder="Digite o seu nome"
+                        required
+                        data-username
+                    />
+                </div>
+                <div class="c-subscription-form__form-group">
+                    <label for="email" class="c-subscription-form__label">E-mail</label>
+                    <input 
+                        class="c-subscription-form__input js-form-input"
+                        title="Insere um e-mail valido: abc@gmail.com"
+                        pattern="[A-Za-z0-9._+-]+@[A-Za-z0-9 -]+\.[a-z]{2,}" 
+                        type="email" 
+                        name="email" 
+                        placeholder="Digite seu melhor e-mail"
+                        data-email
+                        required
+                    />
+                </div>
+                <div class="c-subscription-form__form-group">
+                    <label for="phone" class="c-subscription-form__label">Telefone</label>
+                    <input 
+                        class="c-subscription-form__input js-form-input" 
+                        type="text" 
+                        name="phone" 
+                        placeholder="Número de WhatsApp"
+                        data-phone
+                    />
+                </div>
+                <div class="c-subscription-form__form-group">
+                    <label for="interest" class="c-subscription-form__label">Principal interesse</label>
+                    <select name="interest" class="c-subscription-form__select js-form-select">
+                        <option value="" disabled selected>Selecione</option>
+                        <option value="apartment">Apartamentos</option>
+                        <option value="house">Casas</option>
+                        <option value="other">Outros</option>
+                    </select>
+                </div>
+                <input type="submit" class="c-button" value="Quero me inscrever">
+            </form>
+            <button class="c-button c-button--cancel js-cta-form-button-cancel">Cancelar</button>
+        </dialog>
+    </section>
+    <footer class="l-footer">
+        <h3 class="footer__title">InDecor</h3>
+        <p class="footer__content">A evoluição da decoração de interiores</p>
+        <p class="footer__content"><span class="footer__content--bold">Entre em contato:</span> oi@inDecor.com.br</p>
+        <p class="footer__content"><span class="footer__content--bold">Ou pelo telefone</span>(55)99999-9999</p>
+    </footer>
+    <dialog class="c-modal js-success-modal">
+        <h3 class="c-modal__title">
+            Obrigado!
+        </h3>
+        <p class="c-modal__description">
+            Sua inscrição foi enviada.
+        </p>
+    </dialog>
+    <div class="c-button c-mode c-button--color--dark js-mode-icon">
+        <i class="bi bi-brightness-high-fill c-mode__icon"></i>
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+.c-subscription-form {
+    background-color: var(--secondary);
+    padding: 2em;
+    width: min(400px, 22%);
+}
+
+.c-subscription-form__title {
+    font-size: 1.5em;
+    color: var(--text-secondary);
+    margin-bottom: 1em;
+}
+
+.c-subscription-form__form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.8em;
+}
+
+.c-subscription-form__label { 
+    color: var(--text-tertiary);
+    margin-bottom: .3em;
+    font-weight: bold;
+}
+
+.c-subscription-form__input,
+.c-subscription-form__select {
+    padding: 6px 8px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+@media (max-width: 1186px) {
+    .c-subscription-form {
+        width: 270px;
+        margin: 2em 0;
+        padding: 1em;
+    }
+}

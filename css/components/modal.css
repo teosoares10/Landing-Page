@@ -1,0 +1,31 @@
+.c-modal {
+    border: none;
+    width: min(25rem, 90%);
+    height: fit-content;
+    background-color: #fff;
+    margin: auto;
+    padding: 2em;
+    box-shadow: 0 0 0 100vmax rgb(0 0 0 / .5), 0 0 2rem rgb(0 0 0 / 0.5);
+    border-radius: .5rem;
+    animation: animate;
+    animation-duration: 800ms;
+    text-align: center;
+}
+
+.c-modal__title {
+    color: var(--primary);
+    font-size: 2rem;
+}
+
+.c-modal__description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0;
+    color: var(--text-tertiary);
+    font-size: 1.2rem;
+}
+
+@keyframes animate {
+    from{ opacity: 0; }
+}

@@ -1,0 +1,39 @@
+.event-description__title,
+.event-description__event-date {
+    color: var(--primary);
+}
+
+.event-description__title {
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+.event-description__about-event {
+    font-size: 2em;
+    text-transform: uppercase;
+    max-width: 350px;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.event-description__event-date-announce {
+    font-size: 1.2em;
+    margin-bottom: .3em;
+}
+
+.event-description__event-date {
+    font-weight: bold;
+}
+
+@media (max-width: 420px) {
+    .event-description__disclaimer {
+        padding: 2em;
+    }
+
+    .event-description__title {
+        margin-bottom: .5em;
+    }
+}
+
+
+

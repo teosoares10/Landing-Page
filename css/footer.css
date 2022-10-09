@@ -1,0 +1,13 @@
+.footer__title {
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+}
+
+.footer__content:nth-child(2) {
+    margin-bottom: 1em;
+    font-size: 1.2em;
+}
+
+.footer__content--bold {
+    font-weight: bold;
+}

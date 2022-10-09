@@ -1,0 +1,25 @@
+.c-mode {
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    position: fixed;
+    right: 4em;
+    bottom: 4em;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-mode__icon {
+    font-size: clamp(100%, 2em, 4vh);
+}
+
+@media(max-width: 1120px) {
+    .c-mode {
+        width: 2.5em;
+        height: 2.5em;
+        right: .8em;
+        bottom: .8em;
+    }
+}

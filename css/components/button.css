@@ -1,0 +1,33 @@
+.c-button {
+    background-color: var(--primary);
+    color: var(--text-color);
+    text-transform: uppercase;
+    width: 100%;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.c-button:hover {
+    opacity: 1;
+}
+
+.c-button--cancel {
+    --button-color: #fff;
+    --button-text-color: #252525;
+    background-color: var(--button-color);
+    margin-top: .6em;
+    color: var(--button-text-color);
+}
+
+.c-button--color--dark {
+    --button-color: #252525;
+    background-color: var(--button-color);
+}
+
+@media (max-width: 1120px) {
+    .c-button {
+        opacity: 1;
+    }
+}
